@@ -1,0 +1,116 @@
+.wrapper {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .top {
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    .log {
+      font-size: 10px;
+      /* height: 20px; */
+      width: 55px;
+      margin-bottom: 30px;
+    }
+  }
+
+  #getAllData {
+    font-size: 30px;
+    width: 200px;
+  }
+
+  #query-input {
+    background-color: white;
+    border: solid white 1px;
+    padding: 5px;
+    color: black;
+    option {
+      color: black;
+    }
+  }
+  .albums {
+    width: 700px;
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    img {
+      height: 280px;
+    }
+    .info {
+      margin-left: 30px;
+      font-size: 22px;
+      .name {
+        margin-bottom: 7px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .wrapper {
+    h1 {
+      font-size: 30px;
+    }
+
+    .top {
+      width: 95px;
+      top: 10px;
+      right: 10px;
+      .log {
+        font-size: 8px;
+        width: 45px;
+        // height: 20px;
+      }
+    }
+
+    #getAllData {
+      font-size: 15px;
+      width: 100px;
+    }
+
+    .albums {
+      flex-direction: column;
+      align-items: center;
+      img {
+        height: 280px;
+        width: 280px;
+      }
+
+      .info {
+        margin-top: 20px;
+        margin-left: 0px;
+        width: 280px;
+        h2 {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .wrapper {
+    h1 {
+      position: absolute;
+      left: 15px;
+      top: 20px;
+    }
+
+    #getAllData {
+      margin-top: 60px;
+    }
+  }
+}

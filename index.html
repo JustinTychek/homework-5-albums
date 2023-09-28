@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ablum Browse</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1>Browse Albums</h1>
+        <div class="top">
+            <button class="log" id="login">Login</button>
+            <button class="log" id="logout">Logout</button>
+        </div>
+
+        <div>
+            <button id="getAllData">All Albums</button>
+        </div>
+
+        <div>
+            <label for="query-input">Filter by Genre</label>
+
+            <select name="genres" id="query-input">
+                <option value="Pop">Pop</option>
+                <option value="Jazz">Jazz</option>
+                <option value="Pop Punk">Pop Punk</option>
+
+            </select>
+            <button id="getQueryButton">Search Genre</button>
+            <div id="usersWithFirstName"></div>
+        </div>
+
+        <div id="allData"></div>
+
+
+    </div>
+
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="app/app.js"></script>
+</body>
+
+</html>
